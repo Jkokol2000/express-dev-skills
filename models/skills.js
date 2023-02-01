@@ -1,8 +1,8 @@
 const skills = [
-    {skill: "HTML", proficiancy: "Proficiant", mastered: true, id: 123},
-    {skill: "CSS", proficiancy: "Somewhat Proficiant", mastered: false, id: 456},
-    {skill: "Javascript", proficiancy: "Somewhat Proficiant", mastered: false, id: 789},
-    {skill: "Express", proficiancy: "Not Proficiant... Yet!", mastered: false, id: 101}  
+    {skill: "HTML", proficiency: "Proficiant", description: "Able to accurately create webpages with pure HTML and easily use most HTML methods.", id: 123},
+    {skill: "CSS", proficiency: "Somewhat Proficiant", description: "Able to style webpages using CSS, still learning about CSS variables and some minor applications.", id: 456},
+    {skill: "Javascript", proficiency: "Somewhat Proficiant", description: "Able to accurately create Javascript code, need to work on improving DRY applications of code.", id: 789},
+    {skill: "Express", proficiency: "Not Proficiant... Yet!", description: "Currently Learning...Hopefully mastering!", id: 101}  
 ]
 
 module.exports = {
