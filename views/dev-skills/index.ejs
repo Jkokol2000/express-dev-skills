@@ -4,7 +4,7 @@
     <ul>
         <% skills.forEach(function(t) { %>
         <li>
-           <a href="/skills/<%= t.id %>"><%= t.skill %></a>
+           <a class="button" href="/skills/<%= t.id %>"><%= t.skill %></a>
             -
             <%= t.proficiency %>
         </li>

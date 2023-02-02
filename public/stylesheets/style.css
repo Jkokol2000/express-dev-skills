@@ -1,8 +1,38 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
 }
 
-a {
-  color: #00B7FF;
-}
+.delete-form {
+    display: inline-block;
+    margin-right: 10px;
+  }
+      
+  .delete-form button {
+    color: red;
+  }
+      
+  li {
+    list-style: none;
+  }
+
+  button, .button {
+    border: 0;
+    color: purple;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    transition: filter var(--motion-duration);
+  }
+  
+  button:hover {
+    filter: brightness(1.1);
+  }
+  
+  button:active {
+    filter: brightness(0.9);
+  }

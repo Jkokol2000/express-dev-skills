@@ -9,7 +9,7 @@ router.get('/', skillsCtrl.index)
 router.get('/add', skillsCtrl.add);
 router.get('/:id', skillsCtrl.show);
 router.post('/', skillsCtrl.create);
-
+router.delete('/:id', skillsCtrl.delete)
 // all actual paths start with "/skills"
 
 module.exports = router;

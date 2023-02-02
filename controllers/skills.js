@@ -2,7 +2,8 @@ module.exports = {
     index,
     show,
     add: addSkill,
-    create
+    create,
+    delete: deleteSkill
 };
 
 const skills = require('../models/skills');
@@ -26,5 +27,10 @@ function addSkill(req, res) {
 function create(req, res) {
     console.log(req.body);
     skills.create(req.body)
+    res.redirect('/')
+}
+
+function deleteSkill(req, res) {
+    skills.deleteOne(req.params.id);
     res.redirect('/')
 }
