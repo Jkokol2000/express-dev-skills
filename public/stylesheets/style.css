@@ -36,3 +36,11 @@ body {
   button:active {
     filter: brightness(0.9);
   }
+  a {
+    text-decoration: none;
+  }
+
+  .description {
+    height: 100px;
+    width: 400px;
+  }

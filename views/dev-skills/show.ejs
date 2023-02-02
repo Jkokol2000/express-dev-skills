@@ -5,5 +5,7 @@
         <p>Experience: <%= skills.description %></p>
         <form action="/skills/<%= skills.id %>?_method=Delete" method="POST" class="delete-form">
             <button>DELETE THIS SKILL</button>
+            <a href="/skills/<%= skills.id%>/edit">EDIT SKILL</a>
         </form>
+        
 <%- include("../partials/footer") %>

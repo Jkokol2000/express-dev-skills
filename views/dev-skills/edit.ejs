@@ -1,13 +1,13 @@
 <%- include("../partials/header") %>
-<form action="/skills" method="POST">
+<form action="/skills/<%= skill.id%>?_method=PUT" method="POST">
     <label>
         Skill Name:
-        <input type="text" name="skill">
+        <input type="text" name="skill" value="<%= skill.skill %>">
     </label>
     <br>
     <label>
         Skill Proficiency:
-        <label for="proficient"><input checked type="radio" id="proficient" name="proficiency" value="Proficient">
+        <label for="proficient"></label><input checked type="radio" id="proficient" name="proficiency" value="Proficient">
         Proficient</label>
         <label for="somewhat"><input type="radio" id="somewhat" name="proficiency" value="Somewhat Proficient">
        Somewhat Proficient</label>
@@ -17,9 +17,9 @@
     <br>
     <label>
         Skill Description:
-        <textarea name="description" rows="5" cols="33"></textarea>
+        <textarea name="description" rows="5" cols="33"><%= skill.description %></textarea>
     </label>
     <br>
-    <input class="button" type="submit" value="Submit">
+    <input class="button" type="submit" value="Edit Skill" >
 </form>
 <%- include("../partials/footer") %>
